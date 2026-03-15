@@ -35,7 +35,7 @@
     // Focus on Scroll
     const handleScroll = () => {
       const centerY = window.innerHeight / 2;
-      let closestItem = null;
+      let closestItem: Element | null = null;
       let minDistance = Infinity;
 
       revealItems.forEach((item) => {
