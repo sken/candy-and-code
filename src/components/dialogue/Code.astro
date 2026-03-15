@@ -1,12 +1,18 @@
 ---
 ---
 <div
-  class="code-message reveal-item relative z-10 ml-auto translate-y-8 blur-sm opacity-0 transition-all duration-700 ease-out md:w-[70%] md:pl-12"
+  class="code-message reveal-item relative z-10 ml-auto translate-y-8 blur-md opacity-0 transition-all duration-700 ease-out md:w-[70%] md:pl-12"
   aria-label="AI (The Code)"
 >
   <div
-    class="font-mono text-sm leading-tight text-accent/90 bg-background p-4 rounded-[0.25rem_2rem_2rem_2rem] border border-accent/10"
+    class="dialogue-bubble font-mono text-sm leading-tight text-accent/90 bg-background p-4 rounded-[0.25rem_2rem_2rem_2rem] border border-accent/10 transition-all duration-500 opacity-30 grayscale blur-[1px] scale-95"
   >
     <slot />
   </div>
 </div>
+
+<style>
+  .is-focused .dialogue-bubble {
+    @apply opacity-100 grayscale-0 blur-none scale-100;
+  }
+</style>
